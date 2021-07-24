@@ -1,0 +1,200 @@
+// create worker
+.login-page {
+    .alert {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-bottom: 20px !important;
+    }
+}
+.add-person {
+    background-color: #fff;
+    padding: 25px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px darken($gray, 10);
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    label {
+        margin-right: 10px;
+        margin-bottom: 0 !important;
+        color: $dgray;
+        width: 130px;
+    }
+    .add-action-link-green {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: 15px;
+    }
+}
+
+.status-btns {
+    padding: 0 !important;
+    a {
+        margin-right: 10px;
+    }
+}
+.edit-action {
+    text-decoration: underline;
+    color: $dgray;
+    transition: color 0.3s ease;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.container-summary {
+    .print-pdf {
+        display: none;
+        &.active-pdf {
+            margin: 15px 0;
+            display: flex;
+        }
+    }
+    .form-group {
+        display: flex;
+        align-items: center;
+        color: $dgray;
+        label {
+            width: 120px !important;
+            margin-bottom: 0;
+        }
+        input {
+            border: 1px solid $gray;
+            height: 38px;
+            border-radius: 5px;
+        }
+        select {
+            border: 1px solid $gray;
+            height: 38px;
+            border-radius: 5px;
+
+            width: 100%;
+        }
+        #inNotes {
+            width: 100%;
+        }
+    }
+}
+.able-to-edit {
+    border: none;
+}
+.edit-summary {
+    .add-action-link-green {
+        margin-left: 0;
+    }
+    .update-billing-btn {
+        display: none !important;
+        &.active-update {
+            display: block !important;
+        }
+    }
+}
+// .hours-label{
+// min-width: 120px;
+// }
+#search-by-name {
+    margin-bottom: 15px;
+}
+.dropdown-menu {
+    min-width: 100px;
+    width: auto !important;
+    border-radius: 10px !important ;
+    top: 128% !important;
+    background-color: #f8f9fa !important;
+    border-color: $gray;
+    padding: 10px !important;
+}
+.user-footer {
+    width: 150px !important;
+    margin: 0;
+    background-color: #f8f9fa !important;
+    border-radius: 10px !important ;
+    padding: 0 !important;
+    display: flex !important;
+
+    .logout-btn,
+    .user-site {
+        border: none;
+        border-top: 1px solid $dgray;
+    }
+
+    a {
+        margin: 0 auto !important;
+        display: block !important;
+        width: 100%;
+        text-align: start;
+    }
+    .user-site {
+        border: none !important;
+    }
+
+    &::before {
+        content: "";
+        top: -7px;
+        left: 38px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+
+        border-bottom: 7px solid #f8f9fa;
+    }
+}
+
+.main-sidebar {
+    p {
+        transition: all 0.3s ease;
+    }
+    &:hover,
+    &:focus {
+        a p {
+            opacity: 1 !important;
+            // color:#fff !important;
+        }
+    }
+}
+.no-events {
+    pointer-events: none;
+    opacity: 0.8;
+}
+.edit-btns-container {
+    display: flex;
+    align-items: center;
+    a {
+        margin-top: 50px;
+        button {
+            transition: color 0.3s ease;
+        }
+        &:hover button {
+            color: darken($blue, 10) !important;
+        }
+    }
+    .back-btn {
+        background-color: #fff;
+        border: none;
+        color: $dgray;
+        text-decoration: underline;
+    }
+}
+@media (max-width: 1024px) {
+    .nav-push-menu {
+        display: block;
+    }
+    .user-footer {
+        &::before {
+            content: "";
+            top: -7px;
+            left: unset;
+            right: 22px;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+
+            border-bottom: 7px solid #f8f9fa;
+        }
+    }
+}

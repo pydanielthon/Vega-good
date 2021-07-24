@@ -1,0 +1,111 @@
+body {
+    font-family: "Nunito", sans-serif !important;
+    overflow-x: hidden;
+}
+
+.brand-text {
+    font-size: $huge;
+    color: #fff !important;
+    position: relative;
+    z-index: 2;
+}
+.brand-link {
+    text-align: center !important;
+    width: calc(100% - 32px) !important;
+    padding: 0 !important;
+    margin: 0.8125rem 1rem !important;
+    border-color: #fff !important;
+}
+.main-sidebar {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#00071e, 0.85);
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+    }
+}
+.sidebar {
+    position: relative;
+    z-index: 2;
+}
+.nav-a {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(#fff, 0.3);
+    // justify-content: center;
+    p {
+        margin: 0 0 0 15px !important;
+        transition: transform 0.2s ease;
+    }
+    &:hover p {
+        transform: translateX(5px);
+    }
+}
+.nav-icon {
+    // width: 20px;
+    // height: 20px;
+    font-size: 1.25rem;
+    width: 20px;
+    height: 20px;
+}
+.nav-icon-container {
+    width: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.current-page {
+    color: $lgreen !important;
+}
+
+.sidebar-collapse {
+    .nav-a {
+        p {
+            opacity: 0;
+        }
+    }
+}
+
+.home-page {
+    height: 88vh;
+    .table-container {
+        min-width: 470px;
+    }
+    h1 {
+        text-align: left;
+        font-size: $large * 1.5;
+        font-weight: bold;
+        // margin: 0 auto;
+    }
+    .quote {
+        font-size: $large * 1.25;
+        blockquote {
+            border: none;
+        }
+        span {
+            font-size: $large;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page {
+        .table-container {
+            min-width: unset !important;
+        }
+    }
+}

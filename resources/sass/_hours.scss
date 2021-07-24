@@ -1,0 +1,93 @@
+.single-hour,
+.single-billing {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $gray;
+    // border-top: 2px solid $blue;
+    margin: 20px 0;
+    &:last-of-type {
+        border: none;
+    }
+    select {
+        width: auto !important;
+    }
+    .select2-container {
+        min-width: 250px !important;
+        width: 100% !important;
+    }
+    .form-row {
+        margin: 0;
+        margin: 0 10px;
+        // &:nth-child(1){
+        //     margin:0;
+        // }
+    }
+    label {
+        width: auto !important;
+        font-weight: normal !important;
+        color: #000 !important;
+    }
+}
+.container-hour {
+    .select2-container {
+        width: 60% !important;
+    }
+    .add-person {
+        padding: 0 10px 25px 10px;
+        // padding-bottom: 1;
+    }
+}
+.choose-worker {
+    height: 55px;
+    width: calc(100% + 20px);
+    margin: 0 !important;
+    margin-left: -10px !important;
+    padding: 0 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: $gray;
+    select {
+        max-width: 50%;
+    }
+}
+.select2-container {
+    width: 100% !important;
+}
+.add-hours-btn {
+    margin-left: auto !important;
+    margin-right: 15px;
+}
+
+#exampleFormControlSelect22 + span {
+    // width: 150% !important;
+    flex-grow: 1;
+    min-width: 295px;
+    // max-width: 50%;
+}
+.remove-hour-btn {
+    border: none;
+    background-color: transparent;
+    img {
+        transform: rotate(45deg);
+    }
+}
+.container-hour {
+    #inputSalary {
+        width: 70px !important;
+    }
+}
+
+.inactive-select {
+    opacity: 0.5;
+}
+@media (max-width: 480px) {
+    .container-hour {
+        #inputSalary {
+            width: 100% !important;
+        }
+        .select2-container {
+            width: 100% !important;
+        }
+    }
+}

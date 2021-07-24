@@ -1,0 +1,101 @@
+.update-billing-btn {
+    display: none;
+    margin-bottom: 10px;
+}
+.active-update {
+    display: block;
+}
+.print-pdf {
+    display: none;
+
+    text-align: center;
+}
+.active-pdf {
+    display: block;
+}
+.container-billing, .container-hour{
+    overflow-x: auto;
+    input,select,textarea{
+        min-width: 250px;
+    }
+.notes-row{
+    flex-grow: 1;
+    // width: 100%;
+    .form-group{
+        width: 100%;
+        // max-width: 80%;
+        margin:0 auto;
+        textarea{
+            min-width: unset;
+        }
+    }
+}
+.single-billing{
+    justify-content:flex-start;
+    padding-bottom: 10px;
+}
+.single-hour{
+    padding-bottom: 10px;
+}
+.remove-hour-btn{
+    width: 100%;
+    padding-top:10px;
+}
+    .form-group{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .choose-worker{
+        flex-direction: row !important;
+        align-items: center !important;
+
+    }
+    // .add-person{
+    //     width: 100%;
+    //     min-width: 1500px;
+    // }
+}
+.wide-label{
+    min-width: 155px !important;
+}
+.container-hour{
+    .remove-hour-btn{
+        width: auto;
+    }
+}
+#result-billings{
+    tbody{
+        width: 100%;
+        display: table;
+    }
+}
+@media (max-width:992px){
+    .container-hour{
+        .remove-hour-btn{
+            width: 100%;
+        }
+    }
+}
+@media (max-width:480px){
+    .container-billing, .container-hour{
+     .form-row{
+           width: 95% !important;
+        }
+        .form-group{
+            width: 100%;
+        }
+        input,select,textarea{
+            width: 100% !important;
+        }
+        .notes-row{
+            .form-group{
+                max-width: 100%;
+            }
+            width: 100% !important;
+        }
+    .choose-worker{
+        width: calc(100% + 20px) !important;
+    }
+
+    }
+}
